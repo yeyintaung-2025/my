@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Google Sheet</title>
+    <style>
+        /* Reset default browser margins and paddings */
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrollbars from showing if content exceeds viewport */
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style for the iframe to make it full screen */
+        #googleSheetFrame {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove default iframe border */
+            display: block; /* Ensures no extra space below the iframe */
+        }
+    </style>
+</head>
+<body>
+
+    <iframe
+        id="googleSheetFrame"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS8XkIpdKSGnTaUGqtS2vGhZQXCaXrFx5BYiz_c9KF3jpS2Nfk1A3FSmMhFVkKdD0GSx1MOk8qniu5H/pubhtml?widget=true&amp;headers=false"></iframe>
+        allowfullscreen="true" /* Allows the iframe content to go full screen if supported by browser/content */
+        webkitallowfullscreen="true" /* For older WebKit browsers */
+        mozallowfullscreen="true" /* For older Firefox browsers */
+    ></iframe>
+
+</body>
+</html>
